@@ -51,6 +51,12 @@ class InstallSourceStock implements DataPatchInterface
     protected $searchCriteriaBuilder;
 
     /**
+     * 
+     * @var Csv
+     */
+    protected $csvReader;
+
+    /**
      * InstallSourceStock constructor.
      * @param SampleDataContext $sampleDataContext
      * @param ModuleDataSetupInterface $moduleDataSetup

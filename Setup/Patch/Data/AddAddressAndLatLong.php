@@ -11,6 +11,7 @@ use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\InventoryApi\Api\SourceRepositoryInterface;
 use Magento\Framework\Setup\SampleData\Context as SampleDataContext;
 use Magento\Directory\Model\RegionFactory;
+use Magento\Framework\File\Csv;
 
 class AddAddressAndLatLong implements DataPatchInterface
 {
@@ -24,6 +25,12 @@ class AddAddressAndLatLong implements DataPatchInterface
 
     /** @var RegionFactory  */
     protected $region;
+
+    /**
+     * 
+     * @var Csv
+     */
+    protected $csvReader;
 
 
     public function __construct(SampleDataContext $sampleDataContext,

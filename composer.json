@@ -1,6 +1,7 @@
 {
     "name": "magento/module-msi-source-stock-sample-data",
     "description": "N/A",
+    "version": "1.0.1",
     "require": {
         "magento/framework": "*",
         "magento/module-inventory-api":"*",
